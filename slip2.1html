@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slip 2</title>
+    <style>
+       body{
+        background-color: pink;
+       }
+        .s2 h1{
+            text-align: center;
+        }
+        .landmarks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .landmark {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 15px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .img{
+             text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="s2">
+    <h1>Gadhepimalgoan</h1>
+    <div class="landmarks">
+        <div class="landmark" style="font-family: 'Times New Roman', serif; color: #8B4513; font-weight: bold; font-size: 22px;">
+                Shree Ram Tempel
+            </div>
+            
+            <div class="landmark" style="font-family: 'Georgia', serif; color: #FF6347; font-style: italic; font-size: 20px;">
+                ZP School Center
+            </div>
+            
+            <div class="landmark" style="font-family: 'Arial', sans-serif; color: #228B22; font-weight: bold; font-size: 24px;">
+                Hospital Center
+            </div>
+            
+            <div class="landmark" style="font-family: 'Verdana', sans-serif; color: #8A2BE2; text-decoration: underline; font-size: 21px;">
+                Play Ground
+            </div>
+    </div>
+    <div class="img">
+        <img src="/Photo/travel.png">
+    </div>
+</div>
+</body>
+</html>
