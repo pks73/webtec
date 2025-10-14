@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Project Management Form</title>
+    <style>
+        h2{
+            font-size: 6pt;
+            color: red;
+            background-color: yellow;
+            width: 20%;
+            text-align: center;
+        }
+        .main{
+            width: 20%;
+            align-content: center;
+            height: fit-content;
+            background-color: rgb(3, 185, 240);
+            align-self: center;
+        }
+        .button-group{
+            border-radius: 10px;
+            padding-left: 80px;
+            color: aliceblue;
+        }
+        .main input{
+            border-radius: 3px;
+        }
+        .name{
+            padding-left: 40px;
+        }
+        .main label{
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Project Management</h2>
+    
+    <form>
+        <div class="main">
+                <label> Name</label><input type="text" placeholder="project name" class="name">
+                <br>
+           <br>
+               <label> Assigned to</label> <input type="text" id="assignedTo" name="assignedTo" value="Er Merry Pension"><br>
+                <br><label> Date  </label><input type="date" id="startDate" name="startDate" placeholder="dd-mm-yyyy"><br>
+                <br><label>End Date</label><input type="date" name="endDate" placeholder="dd-mm-yyyy"><br>
+               <br>
+              <label> Priority</label> <input type="radio" name="priority" value="high"> High 
+                <input type="radio" name="priority" value="average"> Average
+                <input type="radio" name="priority" value="low"> Low<br>
+                    <br><label> Description</label><input type="text"><br>
+        <br>
+        <div class="button-group">
+            <button type="submit" style="background-color: aquamarine; border-radius: 3px;">Submit</button>
+            <button type="reset" style="background-color: blue; border-radius: 3px;">Clear</button>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
