@@ -1,0 +1,322 @@
+﻿Slip1 & Slip 11 
+
+Q2A) Q2B) 
+
+ import pandas as pd  import pandas as p 
+import matplotlib.pyplot as plt 
+d = pd.read_csv(‘Iris.csv') df = pd.read_csv(‘winequality-
+
+ax=plt.subplots(1,1,figsize=(10,8)) red.csv') 
+
+d['Species'].value_counts().plot.pie()  df.shape # no.of rows & cols 
+
+plt.title("Iris Species %") df.describe() #stats data 
+
+plt.show() df.info() #features 
+
+ df.dtypes 
+
+  
+
+Slip2 & slip6 
+
+Q2B) 
+
+ import numpy as np 
+import matplotlib.pyplot as plt Q2 A) 
+import pandas as p  import pandas as p 
+df=p.DataFrame({'name':['kunal','rekha','satish','ashish','radha'], import numpy as n 
+               'age':[20,23,22,20,21],  d=p.read_csv('D:\yogita\ss.csv') 
+               'per':[98,80,95,92,85], v=d['age'].mean() 
+               'salary':[100000,300000,20000,300000,80000] }) v1=d['salary'].mean() 
+df.plot(x="name",y="salary") d['age'].fillna(v,inplace=True) 
+plt.show() d['salary'].fillna(v1,inplace=True) 
+Q2C) print(d) 
+import pandas as p  
+df=p.read_csv("ht&wt.csv") 
+print("first 10 rows \n",df.head(10)) 
+print("\n random 20 rows\n",df.sample(20)) 
+print("\n shape \n" ,df.shape) 
+ 
+
+Slip 3 
+
+Q2A)  
+import pandas as p 
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv') 
+#remove id field from iris dataset 
+new_data = d[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]]  
+print(new_data) 
+plt.figure(figsize = (10, 7)) 
+new_data.boxplot() 
+Q2B) 
+import pandas as p 
+df = pd.read_csv('C:\\Users\\DELL\\ht&wt.csv') 
+df.shape # no.of rows & cols 
+df.describe() #stats data 
+df.info() #features 
+df.dtypes 
+ 
+
+
+
+Slip 4 and Slip5 Q2b) 
+ import pandas as p 
+
+Q2A) 
+df = pd.read_csv(‘Data.csv') 
+
+ import matplotlib.pyplot as plt 
+df.shape # no.of rows & cols 
+
+import numpy as np 
+df.describe() #stats data 
+
+x = np.random.randn(50) 
+df.info() #features 
+
+y = np.random.randn(50) 
+df.dtypes 
+
+plt.plot(x,y) 
+ 
+
+plt.show() 
+Slip 7 &slip29 
+
+plt.scatter(x,y)  
+plt.show() Q2)  
+plt.hist(x) 
+plt.show() import pandas as p 
+plt.boxplot(y, vert=False) from sklearn import preprocessing 
+plt.show()  d = pd.read_csv(‘Data.csv') 
+ label_encoder = preprocessing.LabelEncoder() 
+
+d['purchased']=label_encoder.fit_transform(d['purchased']) 
+ one_hot_encoded_data = p.get_dummies(d, columns = 
+ ['country']) 
+Slip 9 &slip 15 print(one_hot_encoded_data) 
+Q2A)  
+import matplotlib.pyplot as plt Q2B) 
+import numpy as np  from matplotlib import pyplot as plt 
+from matplotlib import colors import numpy as np 
+from matplotlib.ticker import PercentFormatter subjects = ['TCS', 'Data Science', 'OS', 
+no_of_balls=50         'JAVA', 'PHP', 'Python'] 
+x = np.random.randn(50) marks = [23, 17, 35, 29, 12, 33] 
+y = np.random.randn(50) fig = plt.figure(figsize =(10, 7)) 
+colors = [np.random.randint(1, 4) for i in range(no_of_balls)] plt.pie(marks, labels = subjects) 
+plt.plot(x,y) plt.show() 
+plt.show()  
+plt.scatter(x,y,c=colors) Slip 10 
+plt.show() 
+ Q2A) 
+Q2C) import pandas as p 
+import pandas as p df=p.read_csv("ht&wt.csv") 
+df = pd.read_csv('winequality-red.csv') print("mean is \n",df.mean) 
+print("\n",df.shape)  print("median is \n",df.median) 
+print("\n",df.describe())  Q2B) 
+df.head(3) def distancesum (x, y, n):  
+     sum = 0 
+     for i in range(n):  
+         for j in range(i+1,n):  
+             sum += (abs(x[i] - x[j]) + 
+                         abs(y[i] - y[j]))  
+           return sum 
+   x = [ -1, 1, 3, 2 ]  
+ y = [ 5, 6, 5, 3 ]  
+ n = len(x)  
+ print(distancesum(x, y, n) ) 
+ 
+ 
+
+
+
+Slip 12 Slip14 
+Q2A) Q2A) Q2B) 
+ import matplotlib.pyplot as plt import numpy as np import pandas as p 
+import numpy as np array = np.arange(5) df = pd.read_csv(‘Advertising.csv') 
+x = np.random.randn(50) print(array)   df.shape # no.of rows & cols 
+y = np.random.randn(50) weights = np.arange(10, 15) df.describe() #stats data 
+plt.plot(x,y) 
+
+print(weights)   df.info() #features 
+plt.show() df.dtypes 
+
+res1 = np.average(array, 
+plt.scatter(x,y)  
+
+weights=weights) 
+plt.show() 
+
+print(res1) 
+plt.hist(x) 
+plt.show() 
+plt.boxplot(y, vert=False) 
+plt.show() 
+Q2B) 
+import pandas as p 
+df=p.DataFrame({'name':['kunal','rekha','satish','ashish','radha'], 
+               'dept':['production','computer','manufacturing',None,'manufacturing'], 
+                'salary':[100000,300000,20000,300000,80000] }) 
+print(df) 
+d=df.dropna() 
+print(d) 
+ 
+ 
+Slip 13 
+Q2A) 
+import pandas as p 
+import matplotlib.pyplot as plt 
+d=p.read_csv('Iris.csv') 
+fig = d[d.Species=='Iris-setosa'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='orange', 
+label='Setosa') 
+d[d.Species=='Iris-versicolor'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='blue', 
+label='versicolor',ax=fig) 
+d[d.Species=='Iris-virginica'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='green', 
+label='virginica', ax=fig) 
+fig.set_xlabel("Petal Length") Q2B) 
+fig.set_ylabel("Petal Width") import numpy as n 
+fig.set_title(" Petal Length VS Petal Width") d=n.array([[0,1],[2,3]]) 
+plt.show() print(d.max()) 
+ print(d.min()) 
+Slip 16  
+Q2A)  
+from matplotlib import pyplot as plt Q2B) 
+
+import numpy as np import pandas as p 
+
+subjects = ['TCS', 'Data Science', 'OS', import numpy as n 
+
+        'JAVA', 'PHP', 'Python'] df=p.DataFrame({'name':['kunal','rekha','satish','ashish','rad
+
+marks = [23, 17, 35, 29, 12, 33] ha'], 
+
+fig = plt.figure(figsize =(10, 7))                'age':[20,23,22,20,21], 
+
+plt.pie(marks, labels = subjects)                'per':[98,80,95,92,85]}) 
+
+ csv print(n.average(df['age'])) 
+
+plt.show() print(n.average(df['per'])) 
+
+
+
+ 
+slip 17 
+Q2B) 
+import pandas as p 
+df=p.DataFrame({'name':['kunal','rekha','satish','ashish','radha'], 
+               'age':[20,23,22,20,21], 
+               'salary':[100000,300000,20000,300000,80000] }) 
+df 
+Q2A) 
+
+import pandas as p 
+import matplotlib.pyplot as plt 
+d=p.read_csv('Iris.csv') 
+fig = d[d.Species=='Iris-setosa'].plot.scatter(x='PetalLengthCm',y='PetalWidthCm',color='orange', 
+label='Setosa') 
+d[d.Species=='Iris-versicolor'].plot.scatter(x='PetalLengthCm',y='PetalWidthCm',color='blue', 
+label='versicolor',ax=fig) 
+fig.set_xlabel("Petal Length") 
+fig.set_ylabel("Petal Width") 
+fig.set_title(" Petal Length VS Petal Width") 
+plt.show() 
+Slip 18 Q2B) 
+Q2A) import pandas as p 
+import pandas as p df = pd.read_csv('ht&wt.csv') 
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv') print(df.head(5)) 
+#remove id field from iris dataset print(df.tail(5)) 
+new_data = d[["SepalLengthCm", "SepalWidthCm", print(df.sample(10)) 
+"PetalLengthCm", "PetalWidthCm"]]  
+print(new_data) 
+plt.figure(figsize = (10, 7)) 
+new_data.boxplot() 
+Slip 19 & Slip 28 
+Q2A) Slip 20 
+import pandas as p Q2A) 
+df=p.DataFrame(columns  import matplotlib.pyplot as plt 
+=['name','age','per']) import numpy as np 
+df.loc[0]=['rajesh',20,95] x = np.random.randn(50) 
+df.loc[1]=['suresh',21,85] y = np.random.randn(50) 
+df.loc[2]=['avinash',20,90] plt.plot(x,y) 
+df.loc[3]=['kunal',21,75] plt.show() 
+df.loc[4]=['sakshi',20,80] plt.scatter(x,y) 
+df.loc[6]=['xxx',np.nan,95] plt.show() 
+df.loc[7]=['suresh',21,85] plt.hist(x) 
+df.loc[8]=['archana',22,91] plt.show() 
+df.loc[9]=['kunal',20,np.nan] Q2B) 
+print(df) plt.boxplot(y, vert=False) 
+print(df.shape) plt.show() 
+print(df.describe)  
+print(df.info()) 
+print(df.dtypes) 
+df["remark"]=None 
+df 
+
+
+
+Slip 21 and 24 
+Q2A) 
+import pandas as p 
+import matplotlib.pyplot as plt 
+d=p.read_csv(‘Iris.csv') 
+d[d.Species=='Iris-setosa'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='orange', 
+label='Setosa') 
+d[d.Species=='Iris-versicolor'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='blue', 
+label='versicolor') 
+d[d.Species=='Iris-virginica'].plot.bar(x='PetalLengthCm',y='PetalWidthCm',color='green', 
+label='virginica') 
+fig.set_xlabel("Petal Length") 
+fig.set_ylabel("Petal Width") 
+fig.set_title(" Petal Length VS Petal Width") 
+plt.show() 
+Q2B) 
+import pandas as p 
+import matplotlib.pyplot as plt 
+d=p.read_csv('C:\\Users\\DELL\\Untitled Folder\\Iris.csv') 
+d[d.Species=='Iris-setosa'].plot.hist(x='PetalLengthCm',y='PetalWidthCm',color='orange', 
+label='Setosa') 
+d[d.Species=='Iris-versicolor'].plot.hist(x='PetalLengthCm',y='PetalWidthCm',color='blue', 
+label='versicolor') 
+d[d.Species=='Iris-virginica'].plot.hist(x='PetalLengthCm',y='PetalWidthCm',color='green', 
+label='virginica') 
+fig.set_xlabel("Petal Length") 
+fig.set_ylabel("Petal Width") 
+fig.set_title(" Petal Length VS Petal Width") 
+plt.show() 
+Slip 25 & slip 26 &Slip 30 
+Q2A) Q2B) 
+
+import matplotlib.pyplot as plt from matplotlib import pyplot as plt 
+
+import numpy as np import numpy as np 
+
+x = np.random.randn(50) subjects = ['TCS', 'Data Science', 'OS', 
+
+y = np.random.randn(50)         'JAVA', 'PHP', 'Python'] 
+
+plt.plot(x,y) marks = [23, 17, 35, 29, 12, 33] 
+
+plt.show() fig = plt.figure(figsize =(10, 7)) 
+
+plt.scatter(x,y,color=’green’) plt.pie(marks, labels = subjects) 
+
+plt.show() plt.show() 
+
+plt.hist(x,color=’yellow’) 
+plt.show() 
+plt.boxplot(y, vert=False) 
+plt.show() 
+Slip 27 
+Q2A) 
+import pandas as p 
+from sklearn import preprocessing 
+ d = pd.read_csv(‘Data.csv') 
+label_encoder = preprocessing.LabelEncoder() 
+ d['purchased']= label_encoder.fit_transform(d['purchased']) 
+one_hot_encoded_data = p.get_dummies(d, columns = ['country']) 
+
+
+
+print(one_hot_encoded_data)
